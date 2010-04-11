@@ -12,7 +12,7 @@
  */
 
 /**
- * Form which demonstrates usage of the TitlePane Decorator
+ * Form which demonstrates usage of the dijit.form.Select Form Element
  *
  * @uses Zend_Dojo_Form
  * @category Crystal
