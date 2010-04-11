@@ -48,7 +48,7 @@ class Crystal_Controller_Plugin_BasicInitialization extends Zend_Controller_Plug
         if ($request->getActionName() !== 'index') {
             $view->code = highlight_file(
                 APPLICATION_PATH . '/views/scripts/' . $this->getRequest()->getControllerName()
-              . '/' . $this->getRequest()->getActionName() . '.phtml' , true
+              . '/' . $this->getRequest()->getActionName() . '.phtml', true
             );
         }
 
