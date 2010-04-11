@@ -35,4 +35,12 @@ class DijitDialogController extends Zend_Controller_Action
     {
         $this->view->form = new Default_Form_SelectExample();
     }
+
+    public function dialogDecoratorAction()
+    {
+        $this->view->form = new Default_Form_DialogDecoratorExample();
+        $this->view->formCode = highlight_file(
+            APPLICATION_PATH . '/forms/DialogDecoratorExample.php', true
+        );
+    }
 }
