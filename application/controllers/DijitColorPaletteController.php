@@ -12,6 +12,10 @@ class DijitColorPaletteController extends Zend_Controller_Action
         $this->_redirect('/index/index/');
     }
 
+    public function simpleAction()
+    {
+    }
+
     public function paletteInFormAction()
     {
         $this->view->form = new Default_Form_ColorPaletteExample();
