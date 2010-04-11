@@ -30,5 +30,8 @@ class DijitFormSelectController extends Zend_Controller_Action
     public function selectFormAction()
     {
         $this->view->form = new Default_Form_SelectExample();
+        $this->view->formCode = highlight_file(
+            APPLICATION_PATH . '/forms/SelectExample.php', true
+        );
     }
 }

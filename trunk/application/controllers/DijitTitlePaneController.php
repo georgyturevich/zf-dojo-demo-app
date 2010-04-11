@@ -35,5 +35,8 @@ class DijitTitlePaneController extends Zend_Controller_Action
     public function subformsDecoratorAction()
     {
         $this->view->form = new Default_Form_TitlePaneExample();
+        $this->view->formCode = highlight_file(
+            APPLICATION_PATH . '/forms/TitlePaneExample.php', true
+        );
     }
 }
