@@ -20,4 +20,12 @@ class DijitTooltipController extends Zend_Controller_Action
     {
         $this->view->form = new Default_Form_SelectExample();
     }
+
+    public function tooltipDecoratorAction()
+    {
+        $this->view->form = new Default_Form_TooltipDecoratorExample();
+        $this->view->formCode = highlight_file(
+            APPLICATION_PATH . '/forms/TooltipDecoratorExample.php', true
+        );
+    }
 }
