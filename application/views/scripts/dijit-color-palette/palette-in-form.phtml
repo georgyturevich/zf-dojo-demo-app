@@ -15,6 +15,10 @@
 <div class="highlightCode">
     <?php echo $this->code ?>
 </div>
+<h5 class="highlightCodeHeading">Code for the Dojo Form:</h5>
+<div class="highlightCode">
+    <?php echo $this->formCode ?>
+</div>
 <?php $this->inlineScript()->captureStart() ?>
 function changeTextBoxValue(colorPalette) {
     dijit.byId("colorTextbox").attr("value", colorPalette.attr("value"));
