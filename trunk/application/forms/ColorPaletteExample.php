@@ -76,7 +76,7 @@ class Default_Form_ColorPaletteExample extends Zend_Dojo_Form
                 'submit',
                 array(
                     'label'  => 'Submit',
-//                    'ignore' => true,
+                    'ignore' => true,
                     'dijitParams' => array(
                         'jsId' => 'submit'
                     )
@@ -97,6 +97,5 @@ class Default_Form_ColorPaletteExample extends Zend_Dojo_Form
 
         $this->getElement('submit')->removeDecorator('Label');
         $this->getElement('colorDropDown')->removeDecorator('Label');
-        $this->getElement('submit')->setIgnore(true);
     }
 }
